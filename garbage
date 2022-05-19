@@ -1,0 +1,172 @@
+class Librarian1{
+    int _librarianID;
+    string _librarianName;
+    string _librarianPassword;
+    char book;
+public:
+    Librarian1(){
+        _librarianID = 0;
+        _librarianName = "";
+        _librarianPassword = "";
+    }
+    Librarian1(int librarianID, string librarianName, string librarianPassword){ //no repeated IDs
+        _librarianID = librarianID;
+        _librarianName = librarianName;
+        _librarianPassword = librarianPassword;
+    }
+    void addBooks(){
+        book = 'a';
+    }
+    void deleteBooks(){};
+    void issueBooks(){};
+    void returnBooks(){};
+    void viewBooks(){};
+    void viewIssueBooks(){};
+    bool login(){return true;};
+    void logout(){};
+    bool searchBook(string name ="mohamed", string ID = "$#DDew2"){ return true;};
+};
+
+class Admin1{
+private:
+    int studentID;
+    string studentName;
+    int studentBirthday;
+    string email;
+    int mobileNumber;
+    int adminID;
+    string adminName;
+    string adminPassword;
+public:
+    void addStudent(int _studentID, string _studentName, int _studentBirthday, string _email, int _mobileNumber){
+        studentID = _studentID ;
+        studentName = _studentName;
+        studentBirthday = _studentBirthday;
+        email = _email;
+        mobileNumber = _mobileNumber;
+    }
+    void removeStudent(){
+        //studentID = NULL;
+        studentName = "";
+        //studentBirthday = NULL;
+        email = "";
+        //mobileNumber = NULL;
+    };
+    void addLibrarian(int _librarianID, string _librarianName, string _librarianPassword) { //no repeated IDs
+        Librarian1(_librarianID, _librarianName, _librarianPassword);
+    }
+    void removeLibrarian(){
+
+    }
+    void addAdmins(int _adminID, string _adminName , string _adminPassword){ //no repeated IDs
+        adminID = _adminID;
+        adminName = _adminName;
+        adminPassword = _adminPassword;
+    }
+    void removeAdmins(){
+        //adminID = NULL;
+        adminName = "";
+        adminPassword = "";
+    };
+    int getID(){
+        return studentID;
+    }
+};
+
+class FileWork{
+    void addBook();
+    void addStudent(){};
+    //void add
+};
+
+/*
+class Book{
+    int bookID;
+    string bookName;
+    string authorName;
+    int availableQuantity;
+    int issuedQuantity;
+    Book(int _bookID,string _bookName,string _authorName,int _availableQuantity,int _issuedQuantity){ //no repeated IDs
+        bookID = _bookID;
+        bookName = _bookName;
+        authorName = _authorName;
+        availableQuantity = _availableQuantity;
+        issuedQuantity = _issuedQuantity;
+    }
+};
+ */
+/*
+class Student{
+    Student(int studentID, string studentName, int studentBirthday, string email, int mobileNumber){
+        int _studentID = studentID ;
+        string _studentName = studentName;
+        int _studentBirthday = studentBirthday;
+        string _email = email;
+        int _mobileNumber = mobileNumber;
+    }
+};
+*/
+/*
+class IssueBooks{
+    int procedureID;
+    int bookID;
+    int studentID;
+    bool returned;
+};
+ */
+class Admin{
+public:
+    string enteredUsername;
+    string enteredPassword;
+    void login(){
+        cout << "Insert your username: ";
+        cin >> enteredUsername;
+        cout << endl;
+        cout << "Insert your password: ";
+        cin >> enteredPassword;
+        if (enteredUsername == username and enteredPassword == password){
+        }
+    }
+private:
+    vector <string> usernames;
+    vector <string> passwords;
+
+};
+class Librarian{
+public:
+    string enteredUsername;
+    string enteredPassword;
+    void login(){
+        cout << "Insert your username: ";
+        cin >> enteredUsername;
+        cout << endl;
+        cout << "Insert your password: ";
+        cin >> enteredPassword;
+        if (enteredUsername == username and enteredPassword == password){
+
+        }
+    }
+private:
+    vector <string> usernames;
+    vector <string> passwords;
+    Librarian() {
+        usernames.push_back("marwan");
+        passwords.push_back("marwan02");
+    }
+};
+
+
+int main() {
+    /*
+    Admin admin[20];
+    for (int i = 0; i < 20; i++){
+        admin[i].addStudent(i, "Marwan", 4, "marawan02@hotmail.com", 1010304619);
+    }
+    for (int i = 0; i < 20; i++){
+        cout << admin[i].getID() << endl;
+    }
+     */
+    /*
+     * Add librarian from the admin class
+     */
+}

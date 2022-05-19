@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -rdynamic CMakeFiles/yourProj.dir/home/marwan/Documents/jsoncpp-master/dist/jsoncpp.cpp.o -o yourProj 

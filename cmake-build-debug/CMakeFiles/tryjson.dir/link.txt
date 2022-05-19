@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -rdynamic CMakeFiles/tryjson.dir/main.cpp.o -o tryjson 

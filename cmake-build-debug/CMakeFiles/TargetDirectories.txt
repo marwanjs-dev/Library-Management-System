@@ -1,0 +1,4 @@
+/home/marwan/CLionProjects/assignment1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/marwan/CLionProjects/assignment1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/marwan/CLionProjects/assignment1/cmake-build-debug/CMakeFiles/assignment1.dir
+/home/marwan/CLionProjects/assignment1/cmake-build-debug/CMakeFiles/yourProj.dir
